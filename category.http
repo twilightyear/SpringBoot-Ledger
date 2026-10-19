@@ -1,0 +1,20 @@
+### 생성 - 지출
+POST http://localhost:8080/categories
+Content-Type: application/json
+
+{ "name": "식비", "type": "EXPENSE" }
+
+### 생성 - 수입
+POST http://localhost:8080/categories
+Content-Type: application/json
+
+{ "name": "월급", "type": "INCOME" }
+
+### 잘못된 type
+POST http://localhost:8080/categories
+Content-Type: application/json
+
+{ "name": "기타", "type": "MEDIUM" }
+
+### 목록
+GET http://localhost:8080/categories
